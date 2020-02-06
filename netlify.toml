@@ -1,0 +1,5 @@
+[build]
+  command = "GO111MODULE=on go build -o ./bin/hello main.go"
+  functions = "bin"
+[build.environment]
+  GO_IMPORT_PATH = "github.com/smoya/netlify-function-go-example"
