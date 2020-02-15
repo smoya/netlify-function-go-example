@@ -11,7 +11,7 @@ func main() {
 	lambda.Start(func(r events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusOK,
-			Body:       "Hello my World!",
+			Body:       "Hello your World!",
 		}, nil
 	})
 }
