@@ -10,7 +10,7 @@ import (
 
 func main() {
 	lambda.Start(func() (events.APIGatewayProxyResponse, error) {
-		log.Println("Processing Lambda request")
+		log.Println("Processing Lambda request!")
 
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusOK,
