@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/aws/aws-lambda-go/events"
@@ -8,7 +9,9 @@ import (
 )
 
 func main() {
-	lambda.Start(func(r events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	lambda.Start(func(_ events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+		log.Println("Processing Lambda request")
+
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusOK,
 			Body:       "Hello your World!",
