@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	lambda.Start(func(_ events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	lambda.Start(func() (events.APIGatewayProxyResponse, error) {
 		log.Println("Processing Lambda request")
 
 		return events.APIGatewayProxyResponse{
