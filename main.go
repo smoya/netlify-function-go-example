@@ -14,7 +14,7 @@ func main() {
 
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusOK,
-			Body:       "Hello your World!",
+			Body:       "Hello, Hello!",
 		}, nil
 	})
 }
